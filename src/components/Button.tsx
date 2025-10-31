@@ -14,6 +14,8 @@ export function Button({ children, className, textVariant = 'default', buttonVar
                 ${className} 
                 ${textVariants[textVariant]} 
                 ${buttonVariants[buttonVariant]}
+                flex items-center justify-center rounded-xl
+                p-3 cursor-pointer
                 text-(--text) 
                 font-(--font-sans) 
                 bg-linear-(--gradient)

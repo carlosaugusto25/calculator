@@ -1,16 +1,14 @@
-import { Text } from './components/Text.tsx'
+import { Calculator } from './components/Calculator.tsx';
+import { OperationHistory } from './components/OperationHistory.tsx';
 import './App.css';
-import { Button } from './components/Button.tsx';
-import { Card } from './components/Card.tsx';
 
 function App() {
 
   return (
-    <div className='bg-(--background)'>
-      <Text variant='heading'>Histórico de Operações</Text>
-      <Button textVariant='heading' className='flex items-center justify-center rounded-xl p-3 cursor-pointer'>Calcular</Button>
-      <Card>minha solidão consome o que restou do meu coração</Card>
-    </div>
+    <main className='py-28 px-4 flex sm:flex-row items-center sm:items-stretch gap-2 sm:px-60 bg-linear-[180deg,#807ECE_0%,#8E7ECE_100%] min-h-screen' >
+      <Calculator />
+      <OperationHistory />
+    </main>
   )
 }
 
